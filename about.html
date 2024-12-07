@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- 
+Student Name: Jacob Laney 
+File Name: about.html
+Date: 11/29/2024
+-->
+
+<html lang="en">
+    <head>
+        <title>Our Mission | Worldwide Fitness</title>
+        <meta charset="utf-8">
+        <meta name="description" content="We are here to beat the stigma or working out. We pride ourselves on providing a world class environment that is perfect for everyone.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="images/worldwidefitnesslogo.jpg">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/worldwidefitnesslogo.jpg">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">   
+        <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+        <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    
+<body>
+     <!-- Skip to Content Link -->  
+    <a class="skip" href="#content">Skip to Content</a>
+
+    <div id="wrapper"> <!-- Parent div with id "wrapper" -->
+
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="tour.html">Tour</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <a class="nav-icon" onclick="menu()">
+                <div id="icon">&#9776;</div>
+            </a>
+        </nav>
+
+        <!-- Use the header area for the website name or logo -->
+        <header>
+            <div class="tab-desk">
+                <a href="index.html">
+                    <img src="images/workout.jpg" alt="members enjoying a workout">
+                </a>
+            </div>
+            <div class="mobile">
+                <h1>&#128170; Worldwide Fitness</h1>
+                <h3>Enjoy Your Workout</h3>
+            </div>
+        </header>
+
+        <!-- Use the nav area to add hyperlinks to other pages within the website -->
+        <nav class ="tab-desk">
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="about.html">About Us</a></li>  
+                <li><a href="tour.html">Tour</a></li> 
+                <li><a href="faqs.html">FAQs</a></li> 
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Use the main area to add the main content to the webpage -->
+        <main id = "content">
+            <div id="info">
+                <h2>About Us</h2>
+                <p>Worldwide Fitness is a commercial gym chain that prioritizes member experience. We currently have 14 locations across three different states. Each of our locations is fully staffed around the clock, includiing an onsite physical trianer included at no extra cost.</p>
+                <p>As a new member you will receive an optional new member orientation that will familiarize you with our gym. Sign up online today or come in and see us for a one week free trial!</a></p>
+                
+                <p>Come in today to get a tour of our facility.</p>
+                
+                <h3>We offer many different classes and ammenities such as:</h3>
+                <ul>
+                    <li>24/7 Gym Access</li>
+                    <li>Tanning Beds</li>
+                    <li>State of the art cardio equipment</li>
+                    <li>New Member Orientation</li>
+                    <li>Guided strength training</li>
+                    <li>Cycling classes</li>
+                    <li>Guided Meal Plans</li>
+                    <li>And much more!</li>
+                </ul>
+
+                <p class="action">Did you find a program for you? Call us today to sign up!</p>
+            </div>
+        </main>
+
+        <!-- Use the footer area to add webpage footer content -->
+        <footer>
+            <div class="copyright"> <!-- Wrapper div for the copyright information -->
+                <p>&copy; Copyright 2021. All Rights Reserved.</p>
+                <p><a href="mailto:contact@worldwidefitness.net">contact@worldwidefitness.net</a></p>
+            </div>
+        
+            <div class="social"> <!-- New div for social links or icons -->
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="images/facebook-logo.png" alt="Facebook logo">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="images/twitter-logo.png" alt="Twitter logo">
+                </a>
+            </div>
+        </footer>
+        
+
+    </div> <!-- End of wrapper div -->
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    
+</body>
+</html>
