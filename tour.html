@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- 
+Student Name: Jacob Laney 
+File Name: tour.html
+Date: 11/29/2024
+-->
+
+<html lang="en">
+    <head>
+        <title>Tour Our Facility</title>
+        <meta charset="utf-8">
+        <meta name="description" content="View our layout below, or come in and see us for a team member lead tour!">
+        <link rel="shortcut icon" href="images/worldwidefitnesslogo.jpg">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/worldwidefitnesslogo.jpg">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">   
+        <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+        <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Fixed closing tag -->
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th, td {
+                border: 1px solid #000;
+                padding: 10px;
+                text-align: left;
+            }
+            th {
+                background-color: #f4f4f4;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+<body>
+     <!-- Skip to Content Link -->  
+<a class="skip" href="#content">Skip to Content</a>
+
+    <div id="wrapper"> <!-- Parent div with id "wrapper" -->
+
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="tour.html">Tour</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <a class="nav-icon" onclick="menu()">
+                <div id="icon">&#9776;</div>
+            </a>
+        </nav>
+ 
+        <!-- Use the header area for the website name or logo -->
+        <header>
+            <div class="tab-desk">
+                <a href="index.html">
+                    <img src="images/workout.jpg" alt="members enjoying a workout">
+                </a>
+            </div>
+            <div class="mobile">
+                <h1>&#128062; Worldwide Fitness</h1>
+                <h3>Enjoy Your Workout</h3>
+            </div>
+        </header>
+
+        <!-- Use the nav area to add hyperlinks to other pages within the website -->
+        <nav class="tab-desk">
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="about.html">About Us</a></li>  
+                <li><a href="tour.html">Tour</a></li> 
+                <li><a href="faqs.html">FAQs</a></li> 
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Use the main area to add the main content to the webpage -->
+        <main id="content">
+            <aside>
+                <p>Familiarize yourself with our gym.</p>
+            </aside>
+
+            <!-- Figure Element 1 -->
+            <figure>
+                <img src="images/ourfacility.jpg" alt="gym floorplan">
+                <figcaption>This is our gym. Our layout is thought out and planned to provide the best possible workout possible!</figcaption>
+            </figure>
+
+            <!-- Membership Table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Membership</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Price: $25/month</td>
+                    </tr>
+                    <tr>
+                        <td>24/7 Gym Access</td>
+                    </tr>
+                    <tr>
+                        <td>Free Fitness Trainer</td>
+                    </tr>
+                    <tr>
+                        <td>Tanning Beds</td>
+                    </tr>
+                    <tr>
+                        <td>Cancel Anytime</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Video Section -->
+            <h2>Take a virtual tour of our facility.</h2>
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/JH3fx_LM4bU" 
+                title="Take a virtual tour of our facility" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+
+        </main>
+
+        <!-- Use the footer area to add webpage footer content -->
+        <footer>
+            <div class="copyright"> <!-- Wrapper div for the copyright information -->
+                <p>&copy; Copyright 2021. All Rights Reserved.</p>
+                <p><a href="mailto:contact@worldwidefitness.net">contact@worldwidefitness.net</a></p>
+            </div>
+        
+            <div class="social"> <!-- New div for social links or icons -->
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="images/facebook-logo.png" alt="Facebook logo">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="images/twitter-logo.png" alt="Twitter logo">
+                </a>
+            </div>
+        </footer>
+        
+
+    </div> <!-- End of wrapper div -->
+
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>
