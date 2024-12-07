@@ -1,0 +1,123 @@
+<!-- 
+Student Name: Jacob Laney 
+File Name: faqs.html
+Date: 11/29/2024
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FAQs | Worldwide Fitness</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Get answers to our most frequently asked questions.">
+        <link rel="shortcut icon" href="images/worldwidefitnesslogo.jpg">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/worldwidefitnesslogo.jpg">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">   
+        <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+        <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <body>
+         <!-- Skip to Content Link -->  
+    <a class="skip" href="#content">Skip to Content</a>
+        <div id="wrapper"> <!-- Parent div with id "wrapper" -->
+
+            <!-- Mobile Nav -->
+            <nav class="mobile-nav tab-desk">  <!-- Add the 'tab-desk' class here -->
+                <div id="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="tour.html">Tour</a>
+                    <a href="faqs.html">FAQs</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <a class="nav-icon" onclick="menu()">
+                    <div id="icon">&#9776;</div>
+                </a>
+            </nav>
+
+            <!-- Use the header area for the website name or logo -->
+            <header>
+            <div class="tab-desk">
+                <a href="index.html">
+                    <img src="images/workout.jpg" alt="members enjoying a workout">
+                </a>
+            </div>
+            <div class="mobile">
+                <h1>&#128062; Worldwide Fitness</h1>
+                <h3>Enjoy Your Workout</h3>
+            </div>
+        </header>
+
+            <!-- Use the nav area to add hyperlinks to other pages within the website -->
+            <nav class="tab-desk">  <!-- Apply 'tab-desk' class to this nav element -->
+                <ul>
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="about.html">About Us</a></li> 
+                    <li><a href="tour.html">Tour</a></li> 
+                    <li><a href="faqs.html">FAQs</a></li> 
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Use the main area to add the main content to the webpage -->
+            <main id="content">
+                <div id="questions">
+                    <p onclick="ans1()">How do I join?</p>
+                    <p onclick="ans2()">What if I have never worked out before?</p>
+                    <p onclick="ans3()">Do you offer any programs or classes?</p>
+                    <p onclick="ans4()">How do I cancel my membership?</p>
+                </div>
+            
+                <div id="answer">
+                    <h2>Answer:</h2>
+                    <p></p>
+
+                    <!-- JavaScript for handling FAQ answers -->
+                    <script>
+                        function ans1() {
+                            const answerDiv = document.getElementById("answer");
+                            answerDiv.querySelector("p").textContent = "Joining is easy! Visit our membership page, fill out the form, and you're all set!";
+                        }
+
+                        function ans2() {
+                            const answerDiv = document.getElementById("answer");
+                            answerDiv.querySelector("p").textContent = "No worries! Our trainers and beginner-friendly programs will guide you every step of the way.";
+                        }
+
+                        function ans3() {
+                            const answerDiv = document.getElementById("answer");
+                            answerDiv.querySelector("p").textContent = "Yes! We offer a wide range of programs, including yoga, cycling, strength training, and more.";
+                        }
+
+                        function ans4() {
+                            const answerDiv = document.getElementById("answer");
+                            answerDiv.querySelector("p").textContent = "To cancel your membership, log in to your account and follow the cancellation steps, or contact our support team.";
+                        }
+                    </script>
+                </div>
+            </main>
+
+            <!-- Use the footer area to add webpage footer content -->
+            <footer>
+            <div class="copyright"> <!-- Wrapper div for the copyright information -->
+                <p>&copy; Copyright 2021. All Rights Reserved.</p>
+                <p><a href="mailto:contact@worldwidefitness.net">contact@worldwidefitness.net</a></p>
+            </div>
+        
+            <div class="social"> <!-- New div for social links or icons -->
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="images/facebook-logo.png" alt="Facebook logo">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="images/twitter-logo.png" alt="Twitter logo">
+                </a>
+            </div>
+        </footer>
+            
+
+        </div> <!-- End of wrapper div -->
+
+    </body>
+</html>

@@ -1,0 +1,334 @@
+/*
+Author: Jacob Laney 
+File Name: styles.css
+Date: 11/29/2024
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul, aside, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #ADD8E6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* Style rules for mobile viewport */
+
+/* Style rules to show mobile class and hide tab-desk class */
+.mobile {
+    display: block; /* Display mobile class as block */
+}
+
+.tab-desk,
+.desktop,
+#nav-links {
+    display: none; /* Hide tab-desk, desktop classes, and nav-links */
+}
+
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.nav-icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ADD8E6;
+    padding: 2%;
+}
+
+.nav-icon div { 
+    height: 40px;
+    width: 40px;
+    color: #000080; 
+}
+
+/* Style rules for header area */
+.mobile h1,
+.mobile h3 {
+    padding: 2%; /* Set padding to 2% */
+    text-align: center; /* Align text to center */
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #000080;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: block; /* Changed from inline-block */
+    font-size: 1.5em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+    border-top: 0.5px solid #ADD8E6; /* Added top border */
+}
+
+nav li a {
+    display: block;
+    color: #ADD8E6;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    font-family: Verdana, Arial, sans-serif;
+    font-family: 'Lora', serif; /* Added Lora font */
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+main h3 {
+    padding-top: 2%;
+}
+
+/* Style rules for h1 and h3 within mobile class */
+.mobile h1 {
+    font-family: 'Emblema One', cursive; /* Added Emblema One font */
+}
+
+.mobile h3 {
+    font-family: 'Lora', serif; /* Added Lora font */
+}
+
+main ul {
+    list-style-type: square;
+}
+
+/* Style rules for class and id selectors */
+.link {
+    color: #4d3319;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.action {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* New style rule for round class */
+.round {
+    border-radius: 6px; /* Added border-radius */
+}
+
+#info ul {
+    margin-left: 10%; /* Set left margin to 10% */
+}
+
+#contact {
+    text-align: center;
+}
+
+/* Style rule for tel-link class */
+.tel-link {
+    background-color: #2a1f14; /* Set background color */
+    padding: 2%; /* Set padding */
+    width: 80%; /* Set width */
+    margin: 0 auto; /* Set top/bottom margins to 0 and left/right margins to auto */
+}
+
+/* Style rule for anchor within tel-link class */
+.tel-link a {
+    color: #ADD8E6; /* Set color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Set font weight to bold */
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #000080;
+    color: #ADD8E6;
+    padding: 1% 0%;
+}
+
+footer a {
+    color: #ADD8E6; 
+    text-decoration: none;
+}
+
+/* New style rules for aside, figure, and figcaption */
+aside {
+    text-align: center; /* Center align text */
+    font-size: 1.5em; /* Set font size to 1.5em */
+    font-weight: bold; /* Set font weight to bold */
+    text-shadow: 4px 4px 10px #c5a687; /* Set text shadow */
+}
+
+figure {
+    border: 4px solid #2a1f14; /* Set border */
+    box-shadow: 6px 6px 10px #c5a687; /* Set box shadow */
+    max-width: 400px; /* Set maximum width */
+    margin: 2% auto; /* Set margin */
+}
+
+figcaption {
+    padding: 2%; /* Set padding */
+    border-top: 4px solid #2a1f14; /* Set top border */
+}
+
+/* New style rule for images within social class */
+.social img {
+    display: inline-block; /* Set display to inline-block */
+    padding: 4%; /* Set padding to 4% */
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px), print {
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */
+    .tab-desk {
+        display: block; /* Show tab-desk class */
+    }
+    
+    .mobile,
+    .mobile-nav {
+        display: none; /* Hide mobile and mobile-nav classes */
+    }
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        border-top: none; /* Remove top border */
+        display: inline-block; /* Set display to inline-block */
+        font-size: 1.25em; /* Set font size */
+        margin-right: 1em; /* Add margin for spacing between items */
+    }
+
+    nav li a {
+        padding: 0.5em; /* Set padding */
+        display: block; /* Ensure anchor tags are block-level for better click areas */
+        text-align: center; /* Center text in each link */
+    }
+
+    /* Tablet Viewport: Style rules for footer area */
+    footer {
+        overflow: auto; /* Set overflow to auto */
+    }
+
+    .copyright {
+        float: left; /* Set float to left */
+        width: 65%; /* Set width to 65% */
+    }
+
+    .social {
+        float: right; /* Set float to right */
+        width: 25%; /* Set width to 25% */
+    }
+}
+
+    /* Style rule for the grid class */
+    .grid {
+        display: grid; /* Set display to grid */
+        grid-template-columns: auto auto; /* Set to two-column layout */
+        grid-gap: 10px; /* Set grid gap */
+    }
+
+    /* Style rule for the aside element */
+    aside {
+        grid-column: 1 / span 2; /* Span across both columns */
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px), print {
+    /* Desktop Viewport: Show desktop class, hide mobile-tablet class */
+    .desktop {
+        display: block; /* Show desktop class */
+    }
+
+    .mobile-tablet {
+        display: none; /* Hide mobile-tablet class */
+    }
+
+    nav li {
+        font-size: 1.5em; /* Set font-size to 1.5em */
+    }
+
+    nav li a {
+        padding: 0.5em 1.5em; /* Set padding for top/bottom to 0.5em and left/right to 1.5em */
+    }
+
+    nav li a:hover {
+        color: #000080; /* Set color on hover */
+        background-color: #ADD8E6; /* Set background-color on hover */
+        opacity: 0.5; /* Set opacity to 0.5 on hover */
+    }
+
+    /* Desktop Viewport: Style rules for main content */
+    #info ul {
+        margin-left: 5%; 
+    }
+
+    /* New style rule for the grid class */
+    .grid {
+        grid-template-columns: auto auto auto; /* Set to three-column layout */
+        grid-gap: 30px; /* Set grid gap */
+    }
+
+    /* Style rule for the aside element */
+    aside {
+        grid-column: 1 / span 3; /* Span across all three columns */
+        font-size: 2em; /* Set font size to 2em */
+    }
+
+    /* Style rules for table */
+    table {
+        border: 1px solid #C0C0C0; /* Set table border */
+        border-collapse: collapse; /* Collapse borders */
+        margin: 0 auto; /* Center table */
+    }
+
+    caption {
+        font-size: 1.5em; /* Set caption font-size */
+        font-weight: bold; /* Set caption font-weight */
+        padding: 1%; /* Set caption padding */
+    }
+
+    th, td {
+        border: 1px solid #C0C0C0; /* Set cell border */
+        padding: 1%; /* Set cell padding */
+    }
+
+    th {
+        background-color: ADD8E6; /* Set header background color */
+        color: #fff; /* Set header text color */
+        font-size: 1.15em; /* Set header font-size */
+    }
+
+    tr:nth-child(odd) {
+        background-color: #deccba; /* Set background color for odd rows */
+    }
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+    body {
+        background: linear
+    }
